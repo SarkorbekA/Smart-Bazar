@@ -1,0 +1,47 @@
+// Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    caret-color: transparent;
+    list-style: none;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+html,
+body{
+    overflow-x: hidden;
+    min-width: 360px;
+}
+:root{
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #383838;
+    --border-color: #d6d3d3;
+    --body-color: #f2f2f2;
+    --primary-blue: #58a6ff;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    section{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
