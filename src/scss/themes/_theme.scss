@@ -16,6 +16,7 @@ html,
 body{
     overflow-x: hidden;
     min-width: 360px;
+    background-color: var(--body-color);
 }
 :root{
     --primary-bg-color: #ffffff;
@@ -27,15 +28,11 @@ body{
 .wrapper{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    section{
-        display: none;
-    }
-    .active{
-        display: block;
-    }
+    margin: 20px 0;
 }
-
+input{
+    caret-color: black;
+}
 button{
     background: none;
     border: none;

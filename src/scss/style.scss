@@ -1,4 +1,8 @@
 // Главный Sass файл
+@import 
+    "../../node_modules/swiper/swiper.scss",
+    "../../node_modules/swiper/modules/pagination/pagination.scss",
+    "../../node_modules/swiper/modules/navigation/navigation.scss";
 
 // Шрифты
 @import "fonts";
@@ -19,6 +23,9 @@
 @import 
     'layout/header',
     'layout/main',
+    'layout/news',
+    'layout/content',
+    'layout/newswrap',
     'layout/category';
     
 // components

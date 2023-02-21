@@ -1,5 +1,5 @@
 include components/header 
-include components/main 
+include components/content
 include components/news
 
 doctype html
@@ -14,6 +14,6 @@ html(lang="en")
     body#body 
         +header 
         .wrapper
-            +main
+            +content
         +news
         script(src="js/app.min.js") 
