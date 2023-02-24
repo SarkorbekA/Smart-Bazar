@@ -34,4 +34,22 @@ export function init() {
     //         content.classList.add('active')
     //     })
     // })
+
+    const exitBtn = document.querySelector('.exit');
+    const filter = document.querySelector('.products-right');
+    const filterBtn = document.querySelector('.card__filter-btn');
+    const body = document.querySelector('body');
+
+
+
+    exitBtn.addEventListener('click', function () {
+        filter.classList.remove('active')
+        body.classList.remove('active')
+    });
+
+
+    filterBtn.addEventListener('click', function () {
+        filter.classList.add('active')
+        body.classList.add('active')
+    })
 }

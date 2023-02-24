@@ -298,12 +298,60 @@
         border-radius: 6px;
         color: #212529;
         background-color: white;
+
+        @media (max-width: 992px) {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 100;
+            overflow: auto;
+        }
+        &.active {
+            display: flex;
+        }
+        .exit {
+            position: fixed;
+            right: 20px;
+            top: 10px;
+            background: #cfcfcf79;
+            border-radius: 4px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after {
+                content: "";
+                height: 2px;
+                border-radius: 4px;
+                width: 24px;
+                background: black;
+                position: absolute;
+                transform: rotate(45deg);
+            }
+            &::before {
+                content: "";
+                height: 2px;
+                border-radius: 4px;
+                width: 24px;
+                background: black;
+                position: absolute;
+                transform: rotate(-45deg);
+            }
+        }
         .filters {
             width: 100%;
             padding: 20px;
             display: flex;
             flex-direction: column;
             gap: 40px;
+            @media (max-width: 992px) {
+                max-width: 500px;
+                margin: auto;
+            }
             &__box {
                 .title {
                     padding: 5px 0px;

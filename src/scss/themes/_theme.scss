@@ -18,6 +18,9 @@ body{
     min-width: 360px;
     background-color: var(--body-color);
 }
+body.active{
+    overflow: hidden;
+}
 :root{
     --primary-bg-color: #ffffff;
     --primary-text-color: #383838;
