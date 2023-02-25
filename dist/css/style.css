@@ -1625,7 +1625,7 @@ button.swiper-pagination-bullet {
   color: gray;
 }
 
-.content__info .content__about {
+.content__info .content-right {
   display: none;
 }
 
@@ -2699,10 +2699,6 @@ a {
   }
 
   .content-right {
-    width: 100%;
-  }
-
-  .content__about {
     display: none;
   }
 
@@ -2710,8 +2706,9 @@ a {
     margin-top: 30px;
   }
 
-  .content__info .content__about {
+  .content__info .content-right {
     display: block;
+    width: 100%;
   }
 
   .newswrap .container {

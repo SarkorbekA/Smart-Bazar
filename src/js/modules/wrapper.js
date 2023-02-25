@@ -42,14 +42,14 @@ export function init() {
 
 
 
-    exitBtn.addEventListener('click', function () {
-        filter.classList.remove('active')
-        body.classList.remove('active')
+    exitBtn?.addEventListener('click', () => {
+        filter.classList.remove('active');
+        body.classList.remove('active');
     });
 
 
-    filterBtn.addEventListener('click', function () {
-        filter.classList.add('active')
-        body.classList.add('active')
-    })
+    filterBtn?.addEventListener('click', () => {
+        filter.classList.add('active');
+        body.classList.add('active');
+    });
 }
