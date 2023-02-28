@@ -1,6 +1,8 @@
 include components/header 
 include components/content
 include components/news
+include components/footer
+include components/menu
 
 doctype html
 html(lang="en")
@@ -12,8 +14,10 @@ html(lang="en")
         link(rel="stylesheet" href="css/style.min.css")
         title bazar 
     body#body 
+        +menu
         +header 
         .wrapper
             +content
         +news
+        +footer
         script(src="js/app.min.js") 

@@ -1,24 +1,20 @@
 .under__header {
+    background: var(--primary-bg-color);
     width: 100%;
-    height: 115px;
+    height: 62px;
     @media (max-width: 768px) {
-        height: 170px;
+        height: 100px;
     }
     @media (max-width: 480px) {
-        height: 210px;
+        height: 150px;
     }
 }
 
 .header {
     width: 100%;
-    background-color: var(--primary-bg-color);
-    border-bottom: 1px solid var(--border-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    .container {
-        padding: 10px 20px 0;
+    background: var(--primary-bg-color);
+    & > .container {
+        padding: 0px 12px;
         position: relative;
         display: flex;
         align-items: center;
@@ -31,9 +27,15 @@
         align-items: center;
         gap: 20px;
         width: 100%;
+        background-color: var(--primary-bg-color);
+        border-bottom: 1px solid var(--border-color);
         flex-wrap: wrap;
-        @media (max-width: 480px) {
-            gap: 10px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        padding: 10px;
+        @media (max-width: 768px) {
+            gap: 8px;
         }
     }
     &-bot {
@@ -99,8 +101,8 @@
     }
     &__menu {
         width: 40px;
-        height: 40px;
-        padding: 8px;
+        height: 30px;
+        padding: 4px 8px;
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -136,7 +138,7 @@
         }
     }
     &__logo {
-        height: 40px;
+        height: 30px;
         font-size: 20px;
         color: var(--primary-text-color);
         letter-spacing: 2px;
