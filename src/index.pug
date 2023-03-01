@@ -1,6 +1,8 @@
 include components/header 
 include components/main 
 include components/news
+include components/footer
+include components/menu
 
 
 
@@ -14,10 +16,12 @@ html(lang="en")
         link(rel="stylesheet" href="css/style.min.css")
         title bazar 
     body#body 
+        +menu
         +header 
         .wrapper
             +main
         +news
+        +footer 
 
         script(src="js/app.min.js") 
 

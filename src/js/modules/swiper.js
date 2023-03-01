@@ -56,5 +56,27 @@ export function init() {
             nextEl: ".content2-next",
             prevEl: ".content2-prev",
         },
+        breakpoints: {
+            1: {
+                slidesPerView: 1,
+                spaceBetween: 40,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 45,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
+        },
     })
 }

@@ -1,47 +1,59 @@
 // Тема по умолчанию
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     caret-color: transparent;
     list-style: none;
     &:focus,
-    &:active{
+    &:active {
         outline: none;
     }
 }
 html,
-body{
-    overflow-x: hidden;
+body {
     min-width: 360px;
     background-color: var(--body-color);
 }
-body.active{
+body {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: gray !important;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgb(214, 214, 214) !important;
+    }
+}
+body.active {
     overflow: hidden;
 }
-:root{
+
+:root {
     --primary-bg-color: #ffffff;
     --primary-text-color: #383838;
     --border-color: #d6d3d3;
     --body-color: #f2f2f2;
     --primary-blue: #58a6ff;
 }
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
 }
-input{
+input {
     caret-color: black;
 }
-button{
+button {
     background: none;
     border: none;
     cursor: pointer;
 }
-a{
+a {
     text-decoration: none;
     color: black;
 }
