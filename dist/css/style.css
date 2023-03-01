@@ -623,6 +623,14 @@ button.swiper-pagination-bullet {
   height: 62px;
 }
 
+.under__header .fix__header {
+  position: fixed;
+  width: 100%;
+  background: var(--primary-bg-color);
+  height: 63px;
+  border-bottom: 1px solid var(--border-color);
+}
+
 .header {
   width: 100%;
   background: var(--primary-bg-color);
@@ -3004,6 +3012,10 @@ a {
     height: 100px;
   }
 
+  .under__header .fix__header {
+    height: 101px;
+  }
+
   .header-top {
     gap: 8px;
   }
@@ -3116,6 +3128,10 @@ a {
 @media (max-width: 480px) {
   .under__header {
     height: 150px;
+  }
+
+  .under__header .fix__header {
+    height: 149px;
   }
 
   .header .search {
