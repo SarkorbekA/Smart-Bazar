@@ -2400,9 +2400,7 @@ button.swiper-pagination-bullet {
   border-radius: 4px;
   width: 40px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2998,6 +2996,12 @@ a {
     bottom: 0;
     z-index: 100;
     overflow: auto;
+  }
+
+  .products-right .exit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .products-right .filters {
