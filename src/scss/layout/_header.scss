@@ -12,13 +12,13 @@
         position: fixed;
         width: 100%;
         background: var(--primary-bg-color);
-        height: 63px;
+        height: 65px;
         border-bottom: 1px solid var(--border-color);
         @media (max-width: 768px) {
-            height: 101px;
+            height: 103px;
         }
         @media (max-width: 480px) {
-            height: 149px;
+            height: 151px;
         }
     }
 }
@@ -41,7 +41,6 @@
         gap: 20px;
         width: 100%;
         background-color: var(--primary-bg-color);
-        border-bottom: 1px solid var(--border-color);
         flex-wrap: wrap;
         position: fixed;
         top: 0;

@@ -627,7 +627,7 @@ button.swiper-pagination-bullet {
   position: fixed;
   width: 100%;
   background: var(--primary-bg-color);
-  height: 63px;
+  height: 65px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -667,7 +667,6 @@ button.swiper-pagination-bullet {
   gap: 20px;
   width: 100%;
   background-color: var(--primary-bg-color);
-  border-bottom: 1px solid var(--border-color);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: fixed;
@@ -3013,7 +3012,7 @@ a {
   }
 
   .under__header .fix__header {
-    height: 101px;
+    height: 103px;
   }
 
   .header-top {
@@ -3131,7 +3130,7 @@ a {
   }
 
   .under__header .fix__header {
-    height: 149px;
+    height: 151px;
   }
 
   .header .search {
